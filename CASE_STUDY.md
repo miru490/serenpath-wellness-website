@@ -6,6 +6,10 @@ SerenPath is a self-directed website concept for a fictional mindset coach and i
 
 The project was created to simulate a common freelance web design brief: a wellness practitioner needs a simple, calming, professional website to present services, explain their approach, show testimonials, provide social media space, and encourage visitors to make contact.
 
+## Live Demo
+
+[https://serenpath-wellness-website.vercel.app]
+
 ## Project Type
 
 Self-directed web design and frontend development case study.

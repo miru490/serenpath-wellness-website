@@ -12,7 +12,7 @@ This is not a real client project. It was created to demonstrate frontend develo
 
 ## Live Demo
 
-Add live demo link here after deployment.
+[https://serenpath-wellness-website.vercel.app]
 
 ## Tech Stack
 
