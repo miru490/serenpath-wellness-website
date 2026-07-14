@@ -5,6 +5,7 @@ import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
+import { PortfolioNotice } from "@/components/PortfolioNotice";
 import { Process } from "@/components/Process";
 import { Services } from "@/components/Services";
 import { SkipLink } from "@/components/SkipLink";
@@ -16,6 +17,7 @@ export default function Home() {
     <>
       <SkipLink />
       <Navbar />
+      <PortfolioNotice />
 
       <main id="main-content" tabIndex={-1}>
         <Hero />

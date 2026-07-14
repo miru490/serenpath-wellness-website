@@ -70,6 +70,16 @@ The SerenPath website uses a warm and minimal design direction built around:
 
 The layout is intentionally simple so the visitor can move from awareness to inquiry without confusion.
 
+## Brand Direction Rationale
+
+The visual system was designed to feel calm, grounded, and approachable rather than overly spiritual or decorative.
+
+The color palette uses warm sand tones to create softness, clay accents to add warmth and human character, muted sage to suggest calm and balance, and deep earth tones for readable contrast.
+
+The typography combines a clean sans-serif body font with a softer editorial display font. This pairing helps the website feel professional while still matching the emotional tone of a wellness and coaching service.
+
+The design avoids heavy mystical visuals, neon colors, and exaggerated spiritual imagery because the target audience needs trust, clarity, and emotional safety more than visual spectacle.
+
 ## Website Structure
 
 The website includes:

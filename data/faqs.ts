@@ -15,8 +15,13 @@ export const faqs = [
       "Yes. This website concept is designed around online private sessions, making it suitable for coaches and wellness practitioners who work remotely.",
   },
   {
+    question: "Is energy healing a replacement for therapy or medical care?",
+    answer:
+      "No. Energy healing is presented here as complementary wellness support only. It does not diagnose, treat, or replace licensed medical care, mental health care, therapy, emergency support, or professional clinical advice.",
+  },
+  {
     question: "What happens after I send a message?",
     answer:
-      "The contact form is designed to collect basic context first, then the practitioner can reply with availability, session recommendations, and next steps.",
+      "The contact form is designed to collect basic context first. A practitioner could then reply with availability, session recommendations, and next steps, typically within 24–48 hours.",
   },
 ];

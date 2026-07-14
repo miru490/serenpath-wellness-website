@@ -1,5 +1,7 @@
 ﻿import { BrandMark } from "@/components/BrandMark";
 
+const socialPlaceholders = ["Instagram", "Facebook", "YouTube"];
+
 export function Footer() {
   return (
     <footer className="bg-[#241f1b] px-5 py-10 text-white md:px-6">
@@ -10,18 +12,26 @@ export function Footer() {
             A calming wellness website concept for mindset coaching and
             intuitive healing.
           </p>
+          <p className="mt-3 max-w-md text-xs leading-5 text-[#a99a8d]">
+            Self-directed portfolio case study. Not a real wellness practice.
+          </p>
         </div>
 
-        <div className="flex flex-wrap gap-5 text-sm text-[#d6c3b1]">
-          <a href="#" className="transition hover:text-white">
-            Instagram
-          </a>
-          <a href="#" className="transition hover:text-white">
-            Facebook
-          </a>
-          <a href="#" className="transition hover:text-white">
-            YouTube
-          </a>
+        <div aria-label="Social media placeholder area">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-[#a99a8d]">
+            Social Space
+          </p>
+
+          <div className="flex flex-wrap gap-3 text-sm text-[#d6c3b1]">
+            {socialPlaceholders.map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-[#4a4038] px-4 py-2"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </footer>

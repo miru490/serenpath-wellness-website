@@ -35,7 +35,7 @@ The first version is structured as a one-page website with multiple business sec
 * Process section
 * Testimonials layout
 * FAQ section
-* Brand system section
+* Brand direction documented in the case study
 * Contact form UI
 * Footer
 
