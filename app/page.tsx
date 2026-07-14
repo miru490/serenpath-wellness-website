@@ -1,5 +1,4 @@
 import { About } from "@/components/About";
-import { BrandPalette } from "@/components/BrandPalette";
 import { Contact } from "@/components/Contact";
 import { ConversionCTA } from "@/components/ConversionCTA";
 import { FAQ } from "@/components/FAQ";
@@ -27,7 +26,6 @@ export default function Home() {
         <Process />
         <Testimonials />
         <FAQ />
-        <BrandPalette />
         <Contact />
       </main>
 
