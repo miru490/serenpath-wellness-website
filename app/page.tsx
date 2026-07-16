@@ -11,13 +11,35 @@ import { Services } from "@/components/Services";
 import { SkipLink } from "@/components/SkipLink";
 import { Testimonials } from "@/components/Testimonials";
 import { TrustStrip } from "@/components/TrustStrip";
+import { siteConfig } from "@/lib/site";
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: siteConfig.name,
+    headline: siteConfig.title,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    creator: {
+      "@type": "Person",
+      name: siteConfig.creator,
+    },
+    inLanguage: "en",
+    genre: "Portfolio case study",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <SkipLink />
-      <Navbar />
       <PortfolioNotice />
+      <Navbar />
 
       <main id="main-content" tabIndex={-1}>
         <Hero />
