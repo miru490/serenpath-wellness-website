@@ -2,7 +2,7 @@
 
 SerenPath is a self-directed web design and frontend development case study for a fictional mindset coach and intuitive energy healing practitioner.
 
-The goal of this project is to demonstrate how a simple service-based website can be designed and built with a calm visual identity, clear service structure, responsive layouts, and a conversion-focused contact path.
+The goal of this project is to demonstrate how a simple service-based website can be designed and built with a calm visual identity, clear service structure, responsive layouts, accessibility-informed details, and a low-pressure contact path.
 
 ## Project Type
 
@@ -27,15 +27,15 @@ This is not a real client project. It was created to demonstrate frontend develo
 
 The first version is structured as a one-page website with multiple business sections:
 
+* Portfolio notice
 * Hero section
 * Trust strip
 * About section
 * Services section
 * Mid-page call to action
 * Process section
-* Testimonials layout
+* Sample reflections layout
 * FAQ section
-* Brand direction documented in the case study
 * Contact form UI
 * Footer
 
@@ -49,9 +49,15 @@ The first version is structured as a one-page website with multiple business sec
 * FAQ section to reduce visitor uncertainty
 * Contact form UI designed for client inquiries
 * Accessible focus states
+* Reduced-motion support
 * Skip link for keyboard users
 * Semantic page structure
 * Local image optimization through Next.js Image
+* Reserved image containers to reduce layout shift
+* SEO and Open Graph metadata for portfolio presentation
+* Canonical URL, generated social preview image, robots.txt, and sitemap.xml
+* CreativeWork JSON-LD that identifies the page as a portfolio case study
+* Baseline response security headers
 
 ## Design Direction
 
@@ -71,6 +77,7 @@ This project includes several basic accessibility improvements:
 
 * Skip to main content link
 * Visible focus states
+* Reduced-motion support for visitors who prefer less animation
 * Semantic main content structure
 * Accessible mobile navigation button with aria-expanded and aria-controls
 * Descriptive image alt text
@@ -78,11 +85,39 @@ This project includes several basic accessibility improvements:
 * Autocomplete attributes for name and email fields
 * Keyboard-accessible navigation and form controls
 
+## UX, Privacy, and Performance Notes
+
+This project was built as a self-directed portfolio case study for a wellness-oriented service website. The design prioritizes calm pacing, readable content, responsive layouts, and low-pressure conversion.
+
+Implementation details include:
+
+* Reduced-motion support for visitors who prefer less animation
+* Clear contact form labels and accessible focus states
+* Stable image containers to reduce layout shift
+* Soft visual hierarchy designed for low cognitive load
+* Honest portfolio labeling and sample reflection disclosure
+* Front-end-only contact form note to avoid misleading data-collection claims
+* No intrusive cookie banner or false security claims
+
+The goal was to demonstrate not only visual design execution, but also the ability to make thoughtful product decisions for a sensitive service category.
+
 ## Important Content Notes
 
-The testimonials in this project are placeholder content used to demonstrate testimonial layout only. They do not represent real customer reviews.
+The sample reflections in this project are placeholder content used to demonstrate testimonial-style layout only. They do not represent real customer reviews.
 
-The contact form is frontend-only and does not submit data yet. It is prepared for future backend, email, or booking system integration.
+The contact form is frontend-only and does not collect, store, send, or submit data yet. It is prepared for future backend, email, or booking system integration.
+
+## Release Verification
+
+The full local project has passed:
+
+* `pnpm lint`
+* `pnpm typecheck`
+* Next.js production build
+* Local responsive checks at 375, 390, 768, 1024, and 1440 pixels
+* Local image-path and console-error checks
+
+Production Lighthouse scores are intentionally not claimed here. They must be measured again after the current release is deployed. See `DEPLOYMENT_CHECKLIST.md` and `LIGHTHOUSE_NOTES.md` for the remaining online checks.
 
 ## What This Project Demonstrates
 
@@ -92,9 +127,10 @@ This project demonstrates the ability to:
 * Design a soft and trustworthy brand direction for a wellness practitioner
 * Build a responsive one-page business website
 * Organize service information clearly
-* Create a conversion path from hero section to contact form
+* Create a low-pressure conversion path from hero section to contact form
 * Implement a clean component structure in Next.js
 * Prepare a website for future backend or booking integration
+* Make UX decisions around trust, accessibility, privacy, and emotional tone
 
 ## Future Improvements
 
@@ -103,8 +139,8 @@ Possible next steps:
 * Connect the contact form to a backend or email service
 * Add a booking calendar integration
 * Add real practitioner photography
-* Replace placeholder testimonials with verified client reviews
+* Replace sample reflections with verified client reviews
 * Add dedicated pages for each service
-* Add basic SEO metadata for service keywords
-* Add performance and accessibility audit results
-* Add simple animation for section transitions
+* Run and document Lighthouse results after deployment
+* Add a formal accessibility audit pass after final content and assets are locked
+* Add simple animation only where it respects reduced-motion preferences

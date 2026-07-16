@@ -24,7 +24,7 @@ This project is designed for clients such as:
 
 ## Original Freelance-Style Brief
 
-A mindset coach and intuitive energy healing practitioner needs a simple website to promote their services. The website should include a home/menu area, about section, services, contact, testimonials, social media space, attractive photos or graphics, and some basic brand direction because there is no existing logo or brand.
+A mindset coach and intuitive energy healing practitioner needs a simple website to promote their services. The website should include a home/menu area, about section, services, contact, testimonials or sample reflection area, social media space, attractive photos or graphics, and some basic brand direction because there is no existing logo or brand.
 
 ## Project Goal
 
@@ -41,6 +41,7 @@ The goal is to demonstrate that I can take a vague small-business website reques
 
 ## Main Sections
 
+* Portfolio Notice
 * Navbar
 * Hero
 * Trust Strip
@@ -48,15 +49,15 @@ The goal is to demonstrate that I can take a vague small-business website reques
 * Services
 * Mid-page CTA
 * Process
-* Testimonials
+* Sample Reflections
 * FAQ
-* Brand System
 * Contact
 * Footer
 
 ## Main Components
 
 * BrandMark
+* PortfolioNotice
 * Navbar
 * Hero
 * TrustStrip
@@ -64,9 +65,8 @@ The goal is to demonstrate that I can take a vague small-business website reques
 * Services
 * ConversionCTA
 * Process
-* Testimonials
+* Sample reflections
 * FAQ
-* BrandPalette
 * Contact
 * Footer
 * SkipLink
@@ -88,15 +88,16 @@ The typography uses a clean sans-serif for body text and an editorial serif disp
 
 The intended visitor path is:
 
-1. Understand the service from the hero section
-2. See trust indicators
-3. Learn about the practitioner’s approach
-4. Compare service options
-5. See a mid-page CTA
-6. Understand the process
-7. Read testimonial layout
-8. Review FAQ
-9. Submit a contact inquiry
+1. Understand the project is a portfolio case study
+2. Understand the service from the hero section
+3. See trust indicators
+4. Learn about the practitioner’s approach
+5. Compare support options
+6. See a mid-page CTA
+7. Understand the process
+8. Read sample reflection layout
+9. Review FAQ
+10. Submit a contact inquiry
 
 ## Honest Portfolio Framing
 
@@ -117,11 +118,55 @@ It should not be presented as:
 
 ## Known Placeholder Areas
 
-* Testimonials are placeholder content.
+* Sample reflections are placeholder content.
 * Contact form is frontend-only.
 * Social links are placeholders.
-* Images are stock or demo assets.
+* Images are stock or demo assets in the full project; trimmed review packages may omit large assets.
 * The brand is fictional.
+
+## Seniority Review Checklist
+
+### Accessibility
+
+- [x] Page supports `prefers-reduced-motion`
+- [x] Keyboard focus states are visible
+- [x] Form fields use real labels
+- [x] Image alt text is meaningful or intentionally empty for decorative images
+- [x] Text contrast is readable on warm backgrounds
+- [x] FAQ and navigation are understandable without visual context
+
+### Privacy and Trust
+
+- [x] Contact form clearly states it is front-end only
+- [x] No false encryption, therapy, medical, or data-storage claims
+- [x] Sample reflections are labeled as placeholder / sample content
+- [x] Footer states this is not a real wellness practice
+- [x] No intrusive cookie banner unless cookies are actually used
+
+### Performance
+
+- [x] Hero image uses optimized loading
+- [x] Images have fixed dimensions or reserved aspect ratios
+- [x] No major layout shift observed during local responsive QA
+- [x] No unnecessary third-party scripts
+- [ ] Lighthouse reviewed after deployment
+
+### Conversion Psychology
+
+- [x] CTA language is low-pressure
+- [x] Services are framed as support options, not aggressive packages
+- [x] Copy avoids exaggerated transformation claims
+- [x] Page flow builds safety before asking for contact
+- [x] No urgency triggers or dark patterns
+
+## Remaining Full-Project Verification
+
+These items should be checked in the complete local project or deployed demo because trimmed review packages may omit large image or model assets.
+
+* Confirm the final production deployment has no image 404s
+* Recheck optimized image responses and the lightweight WebP texture in production
+* Run Lighthouse after deployment and document real scores only
+* Capture final portfolio screenshots after the release deployment
 
 ## What I Want Reviewed
 
