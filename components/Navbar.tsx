@@ -1,18 +1,30 @@
-﻿"use client";
+"use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BrandMark } from "@/components/BrandMark";
 
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Testimonials", href: "#testimonials" },
+  { label: "Sample reflections", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setIsOpen(false);
+    };
+
+    window.addEventListener("keydown", closeOnEscape);
+
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, [isOpen]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#e8ddd2] bg-[#faf7f2]/88 backdrop-blur-xl">
@@ -46,7 +58,7 @@ export function Navbar() {
             href="#contact"
             className="rounded-full bg-[#2f2a26] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-[#4a4038]"
           >
-            Book a Session
+            Send a note
           </a>
         </div>
 
@@ -89,7 +101,7 @@ export function Navbar() {
               className="mt-2 rounded-full bg-[#2f2a26] px-5 py-3 text-center text-sm font-medium text-white"
               onClick={() => setIsOpen(false)}
             >
-              Book a Session
+              Send a note
             </a>
           </nav>
         </div>

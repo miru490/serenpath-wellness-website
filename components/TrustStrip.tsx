@@ -21,7 +21,7 @@ export function TrustStrip() {
   return (
     <section
       className="mx-auto max-w-6xl px-5 pb-10 md:px-6 md:pb-16"
-      aria-label="Service highlights"
+      aria-label="Service trust highlights"
     >
       <div className="grid grid-cols-2 gap-4 rounded-[1.7rem] border border-[#e8ddd2] bg-white/55 p-4 shadow-xl shadow-[#2f2a26]/5 backdrop-blur md:grid-cols-4 md:p-6">
         {items.map((item) => (

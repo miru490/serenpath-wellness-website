@@ -1,22 +1,29 @@
-﻿import { services } from "@/data/services";
+import { services } from "@/data/services";
 
 export function Services() {
   return (
-    <section id="services" className="section-padding mx-auto max-w-6xl px-5 md:px-6">
+    <section
+      id="services"
+      aria-labelledby="services-title"
+      className="section-padding mx-auto max-w-6xl px-5 md:px-6"
+    >
       <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
         <div className="max-w-3xl">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.32em] text-[#a98467]">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.32em] text-[#8a6b52]">
             Services
           </p>
 
-          <h2 className="font-display text-5xl font-semibold leading-tight tracking-tight md:text-6xl">
-            Choose the support that fits your current season
+          <h2
+            id="services-title"
+            className="font-display text-4xl font-semibold leading-tight tracking-tight md:text-6xl"
+          >
+            Different ways to feel supported
           </h2>
         </div>
 
         <p className="max-w-sm text-base leading-7 text-[#6f625a]">
-          Each service is presented with a clear purpose, session format, and
-          next step so visitors can make a confident inquiry.
+          Each option is framed around the visitor’s current state, the kind of support
+          offered, and one calm next step without forcing a quick decision.
         </p>
       </div>
 
@@ -24,10 +31,10 @@ export function Services() {
         {services.map((service, index) => (
           <article
             key={service.title}
-            className="group flex flex-col rounded-[1.7rem] border border-[#e8ddd2] bg-white/60 p-7 transition hover:-translate-y-1 hover:bg-white hover:shadow-2xl hover:shadow-[#2f2a26]/10"
+            className="group flex flex-col rounded-[1.7rem] border border-[#e8ddd2] bg-white/60 p-6 transition motion-safe:hover:-translate-y-1 hover:bg-white hover:shadow-xl hover:shadow-[#2f2a26]/10 md:p-7"
           >
             <div className="mb-7 flex items-center justify-between gap-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#a98467]">
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#8a6b52]">
                 {service.eyebrow}
               </p>
 
@@ -45,14 +52,14 @@ export function Services() {
             </p>
 
             <div className="mt-6 rounded-2xl bg-[#f8f3ec] p-5">
-              <p className="text-sm font-semibold text-[#2f2a26]">Format</p>
+              <p className="text-sm font-semibold text-[#2f2a26]">Session rhythm</p>
               <p className="mt-1 text-sm leading-6 text-[#6f625a]">
                 {service.format}
               </p>
             </div>
 
             <div className="mt-5">
-              <p className="text-sm font-semibold text-[#2f2a26]">Best for</p>
+              <p className="text-sm font-semibold text-[#2f2a26]">When it helps</p>
               <p className="mt-2 text-sm leading-6 text-[#6f625a]">
                 {service.idealFor}
               </p>
@@ -69,9 +76,9 @@ export function Services() {
 
             <a
               href="#contact"
-              className="mt-8 inline-flex items-center justify-center rounded-full bg-[#2f2a26] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#4a4038]"
+              className="mt-8 inline-flex items-center justify-center rounded-full bg-[#2f2a26] px-6 py-3 text-sm font-semibold text-white transition motion-safe:hover:-translate-y-0.5 hover:bg-[#4a4038]"
             >
-              Ask about this service
+              Ask about this option
             </a>
           </article>
         ))}

@@ -20,6 +20,10 @@ html {
 
 body {
   margin: 0;
+  overflow-x: clip;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background:
     radial-gradient(circle at top left, rgba(214, 195, 177, 0.32), transparent 32rem),
     radial-gradient(circle at top right, rgba(143, 175, 159, 0.22), transparent 30rem),
@@ -35,7 +39,7 @@ body::before {
   inset: 0;
   z-index: -1;
   opacity: 0.06;
-  background-image: url("/images/texture-soft.jpg");
+  background-image: url("/images/texture-soft.webp");
   background-size: cover;
   background-position: center;
 }
@@ -77,6 +81,7 @@ a {
 :focus-visible {
   outline: 3px solid #8faf9f;
   outline-offset: 4px;
+  border-radius: 0.5rem;
 }
 
 ::selection {
@@ -92,8 +97,17 @@ img {
   outline: none;
 }
 
-@media (max-width: 640px) {
-  body {
-    overflow-x: hidden;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }

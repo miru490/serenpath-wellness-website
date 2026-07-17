@@ -1,4 +1,4 @@
-﻿const steps = [
+const steps = [
   {
     title: "Connect",
     description:
@@ -18,14 +18,20 @@
 
 export function Process() {
   return (
-    <section className="section-padding bg-[#f3ece4] px-5 md:px-6">
+    <section
+      aria-labelledby="process-title"
+      className="section-padding bg-[#f3ece4] px-5 md:px-6"
+    >
       <div className="mx-auto max-w-6xl">
         <div className="max-w-3xl">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.32em] text-[#a98467]">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.32em] text-[#8a6b52]">
             Process
           </p>
 
-          <h2 className="font-display text-5xl font-semibold leading-tight tracking-tight md:text-6xl">
+          <h2
+            id="process-title"
+            className="font-display text-4xl font-semibold leading-tight tracking-tight md:text-6xl"
+          >
             A simple and supportive process
           </h2>
         </div>
@@ -36,7 +42,8 @@ export function Process() {
               key={step.title}
               className="relative overflow-hidden rounded-[1.7rem] bg-[#faf7f2] p-8"
             >
-              <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-[#d6c3b1]/40" />
+              <div aria-hidden="true"
+                className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-[#d6c3b1]/40" />
 
               <div className="relative z-10">
                 <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-full bg-[#2f2a26] text-sm font-semibold text-white">

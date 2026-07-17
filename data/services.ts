@@ -3,35 +3,35 @@ export const services = [
     title: "Mindset Coaching",
     eyebrow: "For inner clarity",
     description:
-      "A structured coaching session for clients who want to understand limiting beliefs, reframe recurring thought patterns, and move forward with more intention.",
-    format: "60-minute private session",
-    idealFor: "Clients feeling stuck, overwhelmed, or ready for personal change.",
+      "A reflective coaching space for clients whose thoughts feel circular, heavy, or difficult to organize, with support for creating one clearer next step.",
+    format: "60-minute private online session",
+    idealFor: "Moments when the client feels stuck, overwhelmed, or ready to move with more intention.",
     includes: [
-      "Thought pattern reflection",
+      "Thought-pattern reflection",
       "Gentle mindset reframing",
-      "Practical next-step clarity",
+      "One practical next step",
     ],
   },
   {
     title: "Intuitive Energy Healing",
     eyebrow: "For emotional balance",
     description:
-      "A calm, restorative session designed to support emotional release, nervous system grounding, and a softer connection with the body and inner self.",
-    format: "75-minute private session",
-    idealFor: "Clients seeking emotional grounding, release, and energetic support.",
+      "A calm, restorative session for clients who want to slow down, reconnect with the body, and explore emotional balance through a gentle reflective lens.",
+    format: "75-minute private online session",
+    idealFor: "Moments when the client wants emotional grounding, release, and a softer sense of inner steadiness.",
     includes: [
       "Grounding-focused session flow",
       "Emotional release support",
-      "Post-session reflection notes",
+      "Gentle post-session reflection notes",
     ],
   },
   {
     title: "Clarity Session",
     eyebrow: "For a first step",
     description:
-      "A focused introductory session for clients who are unsure where to begin and want a simple, supportive conversation before committing to deeper work.",
-    format: "30-minute introductory call",
-    idealFor: "New clients exploring whether this support style is a good fit.",
+      "A focused introductory conversation for clients who are unsure where to begin and want a simple, supportive first step before choosing deeper work.",
+    format: "30-minute introductory conversation",
+    idealFor: "First-time visitors who want to understand the approach before making a larger commitment.",
     includes: [
       "Current situation review",
       "Support recommendation",

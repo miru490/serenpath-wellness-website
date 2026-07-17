@@ -1,17 +1,17 @@
 export const testimonials = [
   {
     quote:
-      "The session helped me slow down and understand what I had been carrying for a long time.",
+      "I came in feeling scattered. The session helped me slow down enough to hear what I actually needed next.",
     name: "Sample Client",
   },
   {
     quote:
-      "I felt seen, supported, and gently guided toward a more grounded version of myself.",
+      "I appreciated that nothing felt rushed. The conversation gave me language for something I had been holding quietly.",
     name: "Sample Client",
   },
   {
     quote:
-      "The experience was calming, clear, and deeply reassuring.",
+      "The pace felt calm and respectful. I left with one simple next step instead of more pressure.",
     name: "Sample Client",
   },
 ];
